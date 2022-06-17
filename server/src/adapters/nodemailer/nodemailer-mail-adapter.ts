@@ -10,6 +10,8 @@ const transport = nodemailer.createTransport({
  }
 });
 
+//Somente para fazer um novo commit
+
 export class NodemailerMailAdapter implements MailAdapter {
   async sendMail({ subject, body}: SendMailData) {
    await transport.sendMail({
