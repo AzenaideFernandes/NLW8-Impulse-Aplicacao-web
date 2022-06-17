@@ -9,6 +9,6 @@ app.use(express.json());
 app.use(routes);
 // GET, POST, PUT, PATCH, DELETE
 
-app.listen(3333, () => {
+app.listen(process.env.POT || 3333, () => {
   console.log("HTTP server running!");
 });
